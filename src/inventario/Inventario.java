@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class Inventario {
 
-    // ===== VARIABLES GLOBALES =====
+    //  VARIABLES GLOBALES 
     static Scanner sc = new Scanner(System.in);
     static ArrayList<String> nombres = new ArrayList<>();
     static ArrayList<String> autores = new ArrayList<>();
@@ -29,7 +29,7 @@ public class Inventario {
         salidaFinal();
     }
 
-    // ===== ENTRADA =====
+    //  ENTRADA 
     static void entrada() {
         System.out.println("\n--- Registro de nuevo libro ---");
 
@@ -52,7 +52,7 @@ public class Inventario {
         cantidades.add(cantidad);
     }
 
-    // ===== PROCESO =====
+    // PROCESO 
     static void proceso() {
         int i = nombres.size() - 1;
 
@@ -80,9 +80,9 @@ public class Inventario {
         }
     }
 
-    // ===== SALIDA (por cada libro) =====
+    //  SALIDA (por cada libro) 
     static void salidaLibro(int i) {
-        System.out.println("\n--- Datos del libro registrado ---");
+        System.out.println("\n Datos del libro registrado ");
         System.out.println("Nombre: " + nombres.get(i));
         System.out.println("Autor: " + autores.get(i));
         System.out.println("Precio original: " + (int)(precios.get(i) * 100) / 100.0);
@@ -93,7 +93,7 @@ public class Inventario {
 
     // ===== SALIDA FINAL =====
     static void salidaFinal() {
-        System.out.println("\n===== RESUMEN DEL INVENTARIO =====");
+        System.out.println("\nRESUMEN DEL INVENTARIO ");
         for (int i = 0; i < nombres.size(); i++) {
             System.out.println("\nLibro " + (i + 1) + ":");
             System.out.println("Nombre: " + nombres.get(i));
