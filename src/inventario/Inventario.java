@@ -91,7 +91,7 @@ public class Inventario {
         System.out.println("Valor total del libro: " + (int)(valoresTotalesLibro.get(i) * 100) / 100.0);
     }
 
-    // ===== SALIDA FINAL =====
+    // SALIDA FINAL 
     static void salidaFinal() {
         System.out.println("\nRESUMEN DEL INVENTARIO ");
         for (int i = 0; i < nombres.size(); i++) {
